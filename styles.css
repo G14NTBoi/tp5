@@ -14,7 +14,7 @@
 #TitleBanner h1 {
   color: Gold;
  text-transform: uppercase;
-  font-sixze: 500%;
+  font-size: 500%;
   padding: 0;
   margin: 0 0 2vw 2vw;
   position: absolute;
@@ -23,6 +23,15 @@
   text-shadow: 0px 8px 8px black;
   line-height: 80%;
 }
+  #TitleBanner h1.tp{
+  font-size: 250%;
+}
+  #TitleBanner h1.black{
+    color: black;
+     text-shadow: 0px 8px 8px white;
+    
+  }
+
 
 #Recipe_columns {
   padding: 2vh;
@@ -31,12 +40,20 @@
   padding-bottom: 6vh;
   background-color: moccasin;
 }
-
+#Recipe_columns #ingredients ul, #Recipe_columns #directions ol, #Recipe_columns #equipment ul {display: none};
 #Footer{
   background-color: burlywood;
   text-align: center;
 }
-
+#Recipe_columns #ingredients.TPshow ul {
+  display: block;
+}
+#Recipe_columns #directions.TPshow ol {
+  display: block;
+}
+#Recipe_columns #equipment.TPshow ul {
+  display: block;
+}
 div {
   display: block;
   width: 100vw;
@@ -77,5 +94,6 @@ body {
     font-size: 900%;
     margin: 0 0 3vh 3vh;
   }
+ 
   
 }
